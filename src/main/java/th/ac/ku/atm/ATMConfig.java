@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 public class ATMConfig {
     @Bean
     public DataSource dataSource(){
-        return new DataSourceWebAPI(); //เราเลือกที่จะให้return as database
+        return new DataSourceFile("./src/main/resources/customers.txt"); //เราเลือกที่จะให้return as database
     }
 
     @Bean

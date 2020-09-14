@@ -22,7 +22,7 @@ public class Main {
         ApplicationContext context = new AnnotationConfigApplicationContext(ATMConfig.class);
         //อยากได้ object ไหนเราสามารถเรียกผ่าน context.getBean (use spring framework)
         ATM atm = context.getBean(ATM.class);
-        String name = atm.validateCustomer(1,1234);
+        String name = atm.validateCustomer(2,2345);
         System.out.println(name + " has " + atm.getBalance());
         atm.withdraw(200);
         System.out.println(name + " has " + atm.getBalance());
